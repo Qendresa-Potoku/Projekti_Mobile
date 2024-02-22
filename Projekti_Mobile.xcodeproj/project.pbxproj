@@ -16,6 +16,11 @@
 		ECD1F6BA2B873D69001B9EB4 /* Projekti_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6B92B873D69001B9EB4 /* Projekti_MobileTests.swift */; };
 		ECD1F6C42B873D69001B9EB4 /* Projekti_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6C32B873D69001B9EB4 /* Projekti_MobileUITests.swift */; };
 		ECD1F6C62B873D69001B9EB4 /* Projekti_MobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6C52B873D69001B9EB4 /* Projekti_MobileUITestsLaunchTests.swift */; };
+		ECD1F6D52B874405001B9EB4 /* ReminderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6D42B874405001B9EB4 /* ReminderList.swift */; };
+		ECD1F6D72B87441E001B9EB4 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6D62B87441E001B9EB4 /* Reminder.swift */; };
+		ECD1F6D92B874516001B9EB4 /* ToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6D82B874516001B9EB4 /* ToDoApp.swift */; };
+		ECD1F6DB2B874589001B9EB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6DA2B874589001B9EB4 /* ContentView.swift */; };
+		ECD1F6DD2B8747DC001B9EB4 /* ReminderListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6DC2B8747DC001B9EB4 /* ReminderListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		ECD1F6BF2B873D69001B9EB4 /* Projekti_MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Projekti_MobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD1F6C32B873D69001B9EB4 /* Projekti_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projekti_MobileUITests.swift; sourceTree = "<group>"; };
 		ECD1F6C52B873D69001B9EB4 /* Projekti_MobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projekti_MobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECD1F6D42B874405001B9EB4 /* ReminderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderList.swift; sourceTree = "<group>"; };
+		ECD1F6D62B87441E001B9EB4 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		ECD1F6D82B874516001B9EB4 /* ToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp.swift; sourceTree = "<group>"; };
+		ECD1F6DA2B874589001B9EB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECD1F6DC2B8747DC001B9EB4 /* ReminderListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 		ECD1F6A12B873D68001B9EB4 /* Projekti_Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				ECD1F6D32B8743B5001B9EB4 /* View */,
+				ECD1F6D22B8743A7001B9EB4 /* Model */,
 				ECD1F6A22B873D68001B9EB4 /* AppDelegate.swift */,
 				ECD1F6A42B873D68001B9EB4 /* SceneDelegate.swift */,
 				ECD1F6A62B873D68001B9EB4 /* ViewController.swift */,
@@ -125,6 +137,25 @@
 				ECD1F6C52B873D69001B9EB4 /* Projekti_MobileUITestsLaunchTests.swift */,
 			);
 			path = Projekti_MobileUITests;
+			sourceTree = "<group>";
+		};
+		ECD1F6D22B8743A7001B9EB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1F6D42B874405001B9EB4 /* ReminderList.swift */,
+				ECD1F6D62B87441E001B9EB4 /* Reminder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECD1F6D32B8743B5001B9EB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1F6D82B874516001B9EB4 /* ToDoApp.swift */,
+				ECD1F6DA2B874589001B9EB4 /* ContentView.swift */,
+				ECD1F6DC2B8747DC001B9EB4 /* ReminderListRowView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD1F6A72B873D68001B9EB4 /* ViewController.swift in Sources */,
+				ECD1F6DD2B8747DC001B9EB4 /* ReminderListRowView.swift in Sources */,
 				ECD1F6A32B873D68001B9EB4 /* AppDelegate.swift in Sources */,
+				ECD1F6DB2B874589001B9EB4 /* ContentView.swift in Sources */,
 				ECD1F6A52B873D68001B9EB4 /* SceneDelegate.swift in Sources */,
+				ECD1F6D92B874516001B9EB4 /* ToDoApp.swift in Sources */,
+				ECD1F6D52B874405001B9EB4 /* ReminderList.swift in Sources */,
+				ECD1F6D72B87441E001B9EB4 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
