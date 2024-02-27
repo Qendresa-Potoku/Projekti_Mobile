@@ -10,56 +10,47 @@ import SwiftData
 
 
 struct ListCardView: View {
-
-struct ReminderListView: View {
-    @Environment(\.modelContext) var modelContext
     @Bindable var reminderList: ReminderList
-
-
+    @State private var linkIsActive = false
+    
     var body: some View {
-     VStack(alignment: .leading, spacing: 5) {
-            HStack {
+        Button {
+            linkIsActive = true
+        } label: {
+            VStack(alignment: .leading, spacing: 5) {
+                HStack {
+                    listIcon
+                    Spacer()
+                    Text("\(reminderList.reminder.count)")
+                        .font(.system(.title, design: .rounded, weight: .bold))
+                        .padding(.trailing)
+                }
                 Text(reminderList.name)
-                Spacer()
-                Text("\($reminderList.reminder.count)")
+                    .font(.system(.body, design: .rounded, weight: .bold))
+                    .foregroundColor(.secondary)
             }
-            .font(.system(.largeTitle, design: .rounded))
-            .foregroundColor(.primary)
-            .padding(.horizontal)
-            .bold()
-            
-            List {
-                ForEach(reminderList.reminder) { reminders in
-                    ReminderRowView(reminder: reminders)
-                }
-                .onDelete(perform: delete)
-            }
-            .listStyle(.inset)
+            .padding(5)
+            .padding(.horizontal, 5)
+            .background(Color(UIColor.tertiarySystemFill))
+            .cornerRadius(10)
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItemGroup(placement: .bottomBar) {
-                Button {
-                    reminderList.reminder.append(Reminder(name: ""))
-                } label: {
-                    HStack(spacing: 7) {
-                        Image(systemName: "plus.circle.fill")
-                        Text("New Reminder")
-                    }
-                    .font(.system(.body, design: .rounded))
-                    .bold()
-                    .foregroundColor(.primary)
-                }
-                Spacer()
-            }
-        }
+        .overlay(
+            NavigationLink(isActive: $linkIsActive,
+                           destination: { ReminderListView(reminderList: reminderList) },
+                           label: { EmptyView() }
+                          ).opacity(0)
+        ).buttonStyle(.plain)
     }
     
-    func delete(_ indexSet: IndexSet) {
-        for index in indexSet {
-            reminderList.reminder.remove(at: index)
+    var listIcon: some View {
+        ZStack {
+            Circle()
+                .frame(width: 27)
+            Image(systemName: reminderList.iconName)
+                .font(.footnote)
+                .foregroundColor(.white)
+                .bold()
         }
-        try! modelContext.save()
     }
 }
 
