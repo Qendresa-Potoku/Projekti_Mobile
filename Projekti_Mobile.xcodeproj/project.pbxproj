@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2B85DE2B8E629D006CE76D /* CreateSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B85DD2B8E629D006CE76D /* CreateSectionView.swift */; };
 		ECD1F6A32B873D68001B9EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6A22B873D68001B9EB4 /* AppDelegate.swift */; };
 		ECD1F6A52B873D68001B9EB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6A42B873D68001B9EB4 /* SceneDelegate.swift */; };
 		ECD1F6A72B873D68001B9EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1F6A62B873D68001B9EB4 /* ViewController.swift */; };
@@ -41,8 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC2B85DD2B8E629D006CE76D /* CreateSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateSectionView.swift; path = Home/CreateSectionView.swift; sourceTree = "<group>"; };
 		ECD1F69F2B873D68001B9EB4 /* Projekti_Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projekti_Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECD1F6A22B873D68001B9EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECD1F6A22B873D68001B9EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		ECD1F6A42B873D68001B9EB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ECD1F6A62B873D68001B9EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECD1F6A92B873D68001B9EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,7 +113,6 @@
 			children = (
 				ECD1F6D32B8743B5001B9EB4 /* View */,
 				ECD1F6D22B8743A7001B9EB4 /* Model */,
-				ECD1F6A22B873D68001B9EB4 /* AppDelegate.swift */,
 				ECD1F6A42B873D68001B9EB4 /* SceneDelegate.swift */,
 				ECD1F6A62B873D68001B9EB4 /* ViewController.swift */,
 				ECD1F6A82B873D68001B9EB4 /* Main.storyboard */,
@@ -144,6 +145,7 @@
 			children = (
 				ECD1F6D42B874405001B9EB4 /* ReminderList.swift */,
 				ECD1F6D62B87441E001B9EB4 /* Reminder.swift */,
+				ECD1F6A22B873D68001B9EB4 /* AppDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 				ECD1F6D82B874516001B9EB4 /* ToDoApp.swift */,
 				ECD1F6DA2B874589001B9EB4 /* ContentView.swift */,
 				ECD1F6DC2B8747DC001B9EB4 /* ReminderListRowView.swift */,
+				EC2B85DD2B8E629D006CE76D /* CreateSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD1F6A72B873D68001B9EB4 /* ViewController.swift in Sources */,
+				EC2B85DE2B8E629D006CE76D /* CreateSectionView.swift in Sources */,
 				ECD1F6DD2B8747DC001B9EB4 /* ReminderListRowView.swift in Sources */,
 				ECD1F6A32B873D68001B9EB4 /* AppDelegate.swift in Sources */,
 				ECD1F6DB2B874589001B9EB4 /* ContentView.swift in Sources */,
